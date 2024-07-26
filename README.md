@@ -11,7 +11,8 @@ Gerlach, M., Peixoto, T. P., & Altmann, E. G. (2018). A network approach to topi
 Valle, F., Osella, M., & Caselle, M. (2022). Multiomics topic modeling for breast cancer classification. Cancers, 14(5), 1150. https://doi.org/10.3390/cancers14051150
 
 Data used in this work is the pulic CPTAC data set available via the python package cptac https://pypi.org/project/cptac/, it includes bulk transcriptomics,
-proteomics & phosphoproteomics datasets as well as extensice clinical data for 11 cancer types. In the code here only uses the Breast Cancer cohort 
+proteomics & phosphoproteomics datasets as well as extensice clinical data for 11 cancer types. You can download all necessary data to run this scripts here: http://xfer.curie.fr/get/niyreFYl4t5/data.zip.
+In the code here only uses the Breast Cancer cohort 
 (119 patients), but it can be applied to all other cohorts. Further clinical information for each cancer type cohort has been published can be used as further ressource, 
 like in this case for the breast cancer (https://www.cell.com/cell/fulltext/S0092-8674(20)31400-8).
 
@@ -22,7 +23,7 @@ like in this case for the breast cancer (https://www.cell.com/cell/fulltext/S009
 3. Readout of all results, visualisation (R markdown)
 
 
-Data and results can be downloaded here:?
+Data and results can be downloaded here: http://xfer.curie.fr/get/niyreFYl4t5/data.zip
 Since the results are provided, if you don't want/ can't run the SBM analysis itself, you can directly start with the script 3 without having to install anything additional to the R packages specified in the markdown.
 Still, make sure to check out script 01 with the preprocessing first, to properly understand the input data and matching results.
 
