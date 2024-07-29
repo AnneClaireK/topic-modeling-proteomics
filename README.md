@@ -1,4 +1,4 @@
-# Using stochastic based modelling (SBM) topic modelling on proteomics and phosphoproteomics data (single-omics & multi-omics integration)
+# Using stochastic based modelling (SBM) on proteomics and phosphoproteomics data (single-omics & multi-omics integration)
 
 This is a tutorial and application example for the hSBM algorithm (single-omics) by Martin Gerlach 
 https://github.com/martingerlach/hSBM_Topicmodel 
@@ -9,11 +9,11 @@ Gerlach, M., Peixoto, T. P., & Altmann, E. G. (2018). A network approach to topi
 
 Valle, F., Osella, M., & Caselle, M. (2022). Multiomics topic modeling for breast cancer classification. Cancers, 14(5), 1150. https://doi.org/10.3390/cancers14051150
 
-Data used in this work is the pulic CPTAC data set available via the python package cptac https://pypi.org/project/cptac/, it includes bulk transcriptomics,
-proteomics & phosphoproteomics datasets as well as extensice clinical data for 11 cancer types. 
+Data used in this work is the public CPTAC data set available via the python package cptac https://pypi.org/project/cptac/, it includes bulk transcriptomics,
+proteomics & phosphoproteomics datasets and extensive clinical data for 11 cancer types. 
 The code in this repository only uses the Breast Cancer cohort 
-(119 patients), but it can be applied to all other cohorts. Further clinical information for each cancer type cohort has been published can be used as further ressource, 
-like in this case for the breast cancer (https://www.cell.com/cell/fulltext/S0092-8674(20)31400-8).
+(119 patients), but it can be applied to all other cohorts. Further clinical information for each cancer type cohort has been published and can be used as further resource, 
+like in this case for breast cancer (https://www.cell.com/cell/fulltext/S0092-8674(20)31400-8).
 
 ## Structure of the tutorial
 
@@ -21,15 +21,15 @@ like in this case for the breast cancer (https://www.cell.com/cell/fulltext/S009
 2. Run SBM analysis, nSBM & hSBM (Python, needs to be done on computing cluster, min of 30gb ram required)
 3. Readout of all results, visualisation (R markdown)
 
-Please dowload the data and results to run the scripts here: http://xfer.curie.fr/get/niyreFYl4t5/data.zip
+Please download the data and results to run the scripts here: http://xfer.curie.fr/get/niyreFYl4t5/data.zip
 
-Since the results are provided, if you don't want/ can't run the SBM analysis itself, you can directly start with the script 3 without having to install anything additional to the R packages specified in the markdown.
+Since the results are provided, if you don't want/ can't run the SBM analysis itself, you can directly start with script 3 without installing anything additional to the R packages specified in the markdown.
 Still, make sure to check out script 01 with the preprocessing first, to properly understand the input data and matching results.
 
 ## Set Up SBM
 
 If you want to run SBM on your own data, first follow the setup requirements provided by the hSBM tutorial https://github.com/martingerlach/hSBM_Topicmodel. 
-Then install the nsbm python package from the nSBM tutorial https://github.com/martingerlach/hSBM_Topicmodel. 
+Then install the nsbm python package https://github.com/BioPhys-Turin/nsbm (the docker indicated in this setup tutorial is not functional). 
 
 ```
 conda create --name sbm_env python=3.7
@@ -40,7 +40,7 @@ conda install -c conda-forge nsbm #nsbm requirements
 ```
 
 Make sure to additionally download the hSBM code base from here `git clone https://github.com/martingerlach/hSBM_Topicmodel.git` 
-(theoretically it is contained in the nsbm python package, but i haven't tested it so lets just be safe).
+(theoretically, it is contained in the nsbm python package, but I haven't tested it so let's just be safe).
 
 You can also use the already fitted models provided in the data and do visualization in python, please refer to the other SBM packages written in python (https://github.com/BioPhys-Turin/nsbm. https://github.com/martingerlach/hSBM_Topicmodel, https://github.com/fvalle1/nsbm).
 
