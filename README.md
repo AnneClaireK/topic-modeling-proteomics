@@ -1,4 +1,4 @@
-# Using stochastic based modelling (SBM) on proteomics and phosphoproteomics data (single-omics & multi-omics integration)
+# Using stochastic block modelling (SBM) on proteomics and phosphoproteomics data (single-omics & multi-omics integration)
 
 This is a tutorial and application example for the hSBM algorithm (single-omics) by Martin Gerlach 
 https://github.com/martingerlach/hSBM_Topicmodel 
